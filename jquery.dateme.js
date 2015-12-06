@@ -31,8 +31,6 @@
       .attr('name', name)
       .val(getISODate($el.val()));
 
-    $el.attr('name', name);
-
     $el.before($hidden);
 
     $el.on('change', function(e) {

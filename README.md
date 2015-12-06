@@ -6,7 +6,7 @@ Convert user intput datetimes to UTC prior to posting to the server
 
 ## How it works
 
-Assume you have a form that accepts a user entered date and you are working from the Eastern timezone.
+Assume you have a form that accepts a user entered date and you are working from the Eastern timezone. Of course, this will work from any timezone.
 
 ``` html
 <input type="text" id="date" name="date" value="1/1/2015">

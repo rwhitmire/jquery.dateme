@@ -24,7 +24,7 @@ A hidden input is added to the form and the name attribute is applied to the new
 
 ```html
 <input type="hidden" name="date" value="2015-01-01T05:00:00.000Z">
-<input type="text" id="date" name="date-dateme" value="1/1/2015">
+<input type="text" id="date" name="date" value="1/1/2015">
 ```
 
 Date values will now be posted to your server in ISO format UTC. The plugin listens for change events on the

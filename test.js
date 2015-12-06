@@ -38,7 +38,7 @@ QUnit.test('hidden input name', function(assert) {
   $fixture.append($input);
   $input.dateme();
   assert.equal($('[name=foo][type=hidden]').length, 1);
-  assert.equal($('[name=foo-dateme][type=text]').length, 1);
+  assert.equal($('[name=foo][type=text]').length, 1);
 });
 
 QUnit.test('initialized value', function(assert) {

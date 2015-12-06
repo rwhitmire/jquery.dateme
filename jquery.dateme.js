@@ -1,3 +1,11 @@
+/*!
+ * jquery.dateme v1.0.0
+ * https://github.com/rwhitmire/jquery.dateme
+ *
+ * Copyright 2015 Ryan Whitmire
+ * Released under the MIT license
+ */
+
 (function($){
 
   var getISODate = function(str) {

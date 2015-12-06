@@ -14,9 +14,17 @@
     return date.toISOString();
   };
 
+  var getLocaleDate = function(str) {
+    var date = new Date(str);
+    if(date == 'Invalid Date') { return str; }
+    return date.toLocaleString();
+  };
+
   var init = function(index, el) {
     var $el = $(el);
     var name = $el.attr('name');
+
+    $el.val(getLocaleDate($el.val()));
 
     var $hidden = $('<input>')
       .attr('type', 'hidden')

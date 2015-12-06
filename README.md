@@ -2,6 +2,8 @@
 
 Convert user intput datetimes to UTC prior to posting to the server
 
+[![Build Status](https://travis-ci.org/rwhitmire/jquery.dateme.svg)](https://travis-ci.org/rwhitmire/jquery.dateme)
+
 [download](https://raw.githubusercontent.com/rwhitmire/jquery.dateme/master/jquery.dateme.js)
 
 ## How it works

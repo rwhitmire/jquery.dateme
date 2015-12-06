@@ -15,8 +15,7 @@
       .attr('name', name)
       .val(getISODate($el.val()));
 
-    $el
-      .attr('name', name + '-dateme');
+    $el.attr('name', name + '-dateme');
 
     $el.before($hidden);
 

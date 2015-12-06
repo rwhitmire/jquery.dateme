@@ -8,7 +8,7 @@ Convert user intput datetimes to UTC prior to posting to the server
 
 ## How it works
 
-Assume you have a form that accepts a user entered date and you are working from the Eastern timezone. Of course, this will work from any timezone.
+Assume you have a form that accepts a user entered date and you are working from the Eastern timezone.
 
 ``` html
 <input type="text" id="date" name="date" value="1/1/2015">
@@ -27,4 +27,5 @@ A hidden input as added to the form and the name attribute is swapped.
 <input type="text" id="date" name="date-dateme" value="1/1/2015">
 ```
 
-Date values will now be posted to your server in ISO format UTC.
+Date values will now be posted to your server in ISO format UTC. The plugin listens for change events on the
+original input element to keep the hidden input element in sync.

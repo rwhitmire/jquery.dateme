@@ -20,7 +20,7 @@ Initialize the plugin
 $('#date').dateme();
 ```
 
-A hidden input as added to the form and the name attribute is swapped.
+A hidden input is added to the form and the name attribute is applied to the new input.
 
 ```html
 <input type="hidden" name="date" value="2015-01-01T05:00:00.000Z">

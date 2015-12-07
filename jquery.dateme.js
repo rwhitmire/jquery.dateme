@@ -8,6 +8,12 @@
 
 (function($){
 
+  var settings = {
+    format: function(date) {
+      return date.toLocaleString();
+    }
+  };
+
   var getISODate = function(str) {
     var date = new Date(str);
     if(date == 'Invalid Date') { return ''; }
@@ -17,7 +23,7 @@
   var getLocaleDate = function(str) {
     var date = new Date(str);
     if(date == 'Invalid Date') { return str; }
-    return date.toLocaleString();
+    return settings.format(date);
   };
 
   var init = function(index, el) {
@@ -38,7 +44,8 @@
     });
   };
 
-  $.fn.dateme = function() {
+  $.fn.dateme = function(opts) {
+    $.extend(settings, opts);
     this.each(init);
     return this;
   };

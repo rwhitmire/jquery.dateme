@@ -76,3 +76,17 @@ QUnit.test('localize initial date', function(assert) {
   $input.dateme();
   assert.equal($input.val(), date.toLocaleString());
 });
+
+QUnit.test('format', function(assert) {
+  var date = new Date('2000-01-01');
+  var $input = $('<input id="date" name="date">').val(date.toISOString());
+  $fixture.append($input);
+
+  $input.dateme({
+    format: function(d) {
+      return 'foo';
+    }
+  });
+
+  assert.equal($input.val(), 'foo');
+});
